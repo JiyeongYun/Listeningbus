@@ -16,8 +16,10 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
 
     private TextView txtSpeechInput; //음성인식 결과 여기다가 저장
+    public String busnum;
     private ImageButton btnSpeak;
     private final int REQ_CODE_SPEECH_INPUT = 100;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
+
 
         // hide the action bar
         //getActionBar().hide();
@@ -73,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     txtSpeechInput.setText(result.get(0));
+                   busnum = result.toString();
                 }
                 break;
             }
