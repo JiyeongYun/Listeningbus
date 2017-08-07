@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Listeningbus</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="speech_prompt">버스 번호를 한자리씩 숫자로 말씀하세요.</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">마이크를 눌러 음성인식을 시작하세요.</string>
+</resources>
